@@ -1,0 +1,218 @@
+{% extends "base.html" %}
+
+{% block title %}ArcheryAI Pro - Professional Archery Analysis Platform{% endblock %}
+
+{% block content %}
+<!-- Hero Section -->
+<div class="hero-section">
+    <div class="container">
+        <h1 class="display-4 mb-4">
+            <i class="fas fa-bullseye"></i> ArcheryAI Pro
+        </h1>
+        <p class="lead mb-4">
+            Advanced Biomechanical Analysis System for Professional Archery Form Evaluation
+        </p>
+        <p class="mb-4">
+            Developed by Sports Biomechanics Research Team • Version 2.0.0
+        </p>
+        <a href="{{ url_for('analyze_page') }}" class="btn btn-primary btn-lg me-3">
+            <i class="fas fa-play"></i> Start Analysis
+        </a>
+        <a href="{{ url_for('dashboard') }}" class="btn btn-outline-light btn-lg">
+            <i class="fas fa-chart-bar"></i> View Dashboard
+        </a>
+    </div>
+</div>
+
+<div class="main-content">
+    <!-- Features Section -->
+    <div class="row">
+        <div class="col-12 text-center mb-5">
+            <h2 class="display-6 mb-3">Professional Analysis Features</h2>
+            <p class="lead text-muted">
+                Comprehensive biomechanical evaluation with real-time feedback and professional reporting
+            </p>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-4">
+            <div class="feature-card text-center">
+                <div class="mb-3">
+                    <i class="fas fa-video fa-3x text-primary"></i>
+                </div>
+                <h4>Video Analysis</h4>
+                <p>Upload archery videos for comprehensive form analysis with frame-by-frame evaluation and detailed biomechanical assessment.</p>
+                <ul class="list-unstyled text-start">
+                    <li><i class="fas fa-check text-success"></i> Multi-format support</li>
+                    <li><i class="fas fa-check text-success"></i> HD video processing</li>
+                    <li><i class="fas fa-check text-success"></i> Batch analysis</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="col-md-4">
+            <div class="feature-card text-center">
+                <div class="mb-3">
+                    <i class="fas fa-camera fa-3x text-success"></i>
+                </div>
+                <h4>Real-time Analysis</h4>
+                <p>Live camera feed analysis for immediate feedback during practice sessions with instant form corrections.</p>
+                <ul class="list-unstyled text-start">
+                    <li><i class="fas fa-check text-success"></i> Live pose detection</li>
+                    <li><i class="fas fa-check text-success"></i> Instant feedback</li>
+                    <li><i class="fas fa-check text-success"></i> Session recording</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="col-md-4">
+            <div class="feature-card text-center">
+                <div class="mb-3">
+                    <i class="fas fa-chart-line fa-3x text-warning"></i>
+                </div>
+                <h4>Performance Metrics</h4>
+                <p>Detailed biomechanical metrics with professional scoring system and comprehensive performance tracking.</p>
+                <ul class="list-unstyled text-start">
+                    <li><i class="fas fa-check text-success"></i> Form scoring</li>
+                    <li><i class="fas fa-check text-success"></i> Progress tracking</li>
+                    <li><i class="fas fa-check text-success"></i> Comparative analysis</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Technical Capabilities -->
+    <div class="row mt-5">
+        <div class="col-12 text-center mb-4">
+            <h3>Advanced Technical Capabilities</h3>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-6">
+            <div class="analysis-card">
+                <h5><i class="fas fa-cogs text-primary"></i> Biomechanical Analysis</h5>
+                <ul class="mb-0">
+                    <li>Multi-phase analysis pipeline</li>
+                    <li>3D skeletal reconstruction</li>
+                    <li>Joint angle calculations</li>
+                    <li>Movement pattern analysis</li>
+                    <li>Symmetry detection algorithms</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="col-md-6">
+            <div class="analysis-card">
+                <h5><i class="fas fa-brain text-success"></i> AI-Powered Insights</h5>
+                <ul class="mb-0">
+                    <li>Predictive performance modeling</li>
+                    <li>Adaptive learning capabilities</li>
+                    <li>Corrective feedback generation</li>
+                    <li>Professional scoring methodology</li>
+                    <li>Personalized recommendations</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Analysis Phases -->
+    <div class="row mt-5">
+        <div class="col-12 text-center mb-4">
+            <h3>Comprehensive Analysis Phases</h3>
+            <p class="text-muted">Our system evaluates every aspect of archery form</p>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-2 col-sm-4 col-6 text-center mb-3">
+            <div class="p-3">
+                <i class="fas fa-user-check fa-2x text-primary mb-2"></i>
+                <h6>Stance Analysis</h6>
+                <small class="text-muted">Posture & alignment</small>
+            </div>
+        </div>
+        <div class="col-md-2 col-sm-4 col-6 text-center mb-3">
+            <div class="p-3">
+                <i class="fas fa-crosshairs fa-2x text-success mb-2"></i>
+                <h6>Nocking Setup</h6>
+                <small class="text-muted">Arrow positioning</small>
+            </div>
+        </div>
+        <div class="col-md-2 col-sm-4 col-6 text-center mb-3">
+            <div class="p-3">
+                <i class="fas fa-arrows-alt-h fa-2x text-warning mb-2"></i>
+                <h6>Draw Phase</h6>
+                <small class="text-muted">Symmetry detection</small>
+            </div>
+        </div>
+        <div class="col-md-2 col-sm-4 col-6 text-center mb-3">
+            <div class="p-3">
+                <i class="fas fa-anchor fa-2x text-info mb-2"></i>
+                <h6>Anchor Point</h6>
+                <small class="text-muted">Consistency check</small>
+            </div>
+        </div>
+        <div class="col-md-2 col-sm-4 col-6 text-center mb-3">
+            <div class="p-3">
+                <i class="fas fa-hand-paper fa-2x text-danger mb-2"></i>
+                <h6>Release</h6>
+                <small class="text-muted">Mechanics analysis</small>
+            </div>
+        </div>
+        <div class="col-md-2 col-sm-4 col-6 text-center mb-3">
+            <div class="p-3">
+                <i class="fas fa-arrow-right fa-2x text-secondary mb-2"></i>
+                <h6>Follow-through</h6>
+                <small class="text-muted">Trajectory tracking</small>
+            </div>
+        </div>
+    </div>
+
+    <!-- Call to Action -->
+    <div class="row mt-5">
+        <div class="col-12 text-center">
+            <div class="p-5" style="background: linear-gradient(135deg, #f8f9fa, #e9ecef); border-radius: 15px;">
+                <h3 class="mb-3">Ready to Improve Your Archery Form?</h3>
+                <p class="lead mb-4">
+                    Get professional-grade analysis and personalized feedback to take your archery to the next level.
+                </p>
+                <a href="{{ url_for('analyze_page') }}" class="btn btn-primary btn-lg">
+                    <i class="fas fa-rocket"></i> Start Your Analysis Now
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block extra_js %}
+<script>
+    // Add some interactive elements
+    document.addEventListener('DOMContentLoaded', function() {
+        // Animate feature cards on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Observe all feature cards
+        document.querySelectorAll('.feature-card, .analysis-card').forEach(card => {
+            card.style.opacity = '0';
+            card.style.transform = 'translateY(20px)';
+            card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(card);
+        });
+    });
+</script>
+{% endblock %}

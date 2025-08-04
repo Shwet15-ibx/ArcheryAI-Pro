@@ -1,0 +1,149 @@
+# ArcheryAI Pro - Analysis Configuration
+# Advanced Biomechanical Analysis System Configuration
+
+analysis:
+  pose_detection:
+    confidence_threshold: 0.7
+    model_complexity: 2
+    smooth_landmarks: true
+    enable_segmentation: false
+    smooth_segmentation: true
+    min_detection_confidence: 0.7
+    min_tracking_confidence: 0.7
+    
+  biomechanics:
+    joint_angle_tolerance: 5.0
+    movement_threshold: 0.02
+    symmetry_threshold: 0.8
+    stability_threshold: 0.7
+    efficiency_threshold: 0.8
+    
+  form_evaluation:
+    error_threshold: 0.5
+    phase_weights:
+      stance: 0.15
+      nocking: 0.10
+      draw: 0.25
+      anchor: 0.20
+      release: 0.20
+      follow_through: 0.10
+    confidence_thresholds:
+      critical: 0.8
+      important: 0.7
+      secondary: 0.6
+      
+  performance_metrics:
+    metric_weights:
+      accuracy: 0.3
+      consistency: 0.25
+      efficiency: 0.25
+      stability: 0.2
+    performance_thresholds:
+      excellent: 0.9
+      good: 0.8
+      average: 0.7
+      below_average: 0.6
+      poor: 0.5
+    calculation_params:
+      smoothing_window: 5
+      outlier_threshold: 2.0
+      consistency_window: 10
+      efficiency_threshold: 0.8
+
+visualization:
+  3d_visualization:
+    enabled: true
+    quality: high
+    export_formats: [png, mp4, html]
+    render_quality: 1080p
+    
+  overlay:
+    show_landmarks: true
+    show_angles: true
+    show_feedback: true
+    color_scheme: performance
+    text_size: 0.6
+    line_thickness: 2
+    
+  realtime:
+    enabled: true
+    show_metrics: true
+    show_landmarks: true
+    show_feedback: true
+    fps_limit: 30
+
+output:
+  save_frames: false
+  save_3d_models: true
+  generate_reports: true
+  export_formats: [json, csv, html]
+  report_formats: [html, json, csv, pdf]
+  
+  file_naming:
+    include_timestamp: true
+    include_video_name: true
+    prefix: "archery_analysis"
+    
+  directories:
+    results: "results"
+    logs: "logs"
+    models: "models"
+    data: "data"
+    reports: "reports"
+
+performance:
+  use_gpu: true
+  batch_size: 1
+  max_workers: 4
+  memory_limit: "4GB"
+  
+  optimization:
+    enable_caching: true
+    cache_size: "2GB"
+    parallel_processing: true
+    
+  monitoring:
+    enable_profiling: false
+    log_performance: true
+    memory_tracking: true
+
+archery_standards:
+  # Optimal angles for archery form
+  joint_angles:
+    shoulder_alignment: 90.0
+    elbow_angle: 160.0
+    wrist_angle: 180.0
+    hip_alignment: 0.0
+    knee_angle: 170.0
+    
+  # Tolerances for acceptable form
+  tolerances:
+    shoulder_alignment: 5.0
+    elbow_angle: 10.0
+    wrist_angle: 15.0
+    hip_alignment: 3.0
+    knee_angle: 5.0
+    
+  # Movement stability thresholds
+  stability_thresholds:
+    head_stability: 0.02
+    shoulder_stability: 0.03
+    arm_stability: 0.05
+    torso_stability: 0.04
+    leg_stability: 0.06
+
+# Patent-worthy features configuration
+patent_features:
+  advanced_biomechanics: true
+  realtime_3d_reconstruction: true
+  predictive_analysis: true
+  adaptive_learning: true
+  comprehensive_scoring: true
+  
+  # Novel algorithms
+  algorithms:
+    multi_phase_analysis: true
+    symmetry_detection: true
+    movement_pattern_analysis: true
+    performance_prediction: true
+    corrective_feedback_generation: true 
