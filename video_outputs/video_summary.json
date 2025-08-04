@@ -1,0 +1,23 @@
+{
+  "timestamp": "2025-08-04T13:23:07.943941",
+  "videos_created": [
+    "video_outputs\\archery_analysis_demo.mp4",
+    "video_outputs\\analysis_overlay.png",
+    "video_outputs\\before_after_comparison.mp4"
+  ],
+  "features": [
+    "Real-time pose detection",
+    "Biomechanical angle calculations",
+    "Performance metrics overlay",
+    "Before/after comparisons",
+    "Progress tracking",
+    "Professional annotations"
+  ],
+  "formats": [
+    "MP4",
+    "PNG",
+    "JSON"
+  ],
+  "quality": "HD (1280x720)",
+  "fps": 30
+}

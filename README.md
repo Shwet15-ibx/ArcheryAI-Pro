@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 🏹 ArcheryAI Pro - Advanced Biomechanical Analysis System
 
 [![Python](https://img.shields.io/badge/Python-3.7+-blue.svg)](https://www.python.org/downloads/)
@@ -442,3 +443,6 @@ This project is developed for patent filing consideration. All rights reserved.
 ### 🤝 Contributing
 
 This is a proprietary system developed for patent evaluation. For collaboration opportunities, please contact the development team. 
+=======
+# ArcheryAI-Pro
+>>>>>>> 525ec3a2cdca511cd4e746fe279a3b5c977395dd
